@@ -13,13 +13,13 @@ services:
     networks:
       default:
         aliases:
-          - api.wb.local
-          - auth.wb.local
-          - ws.ranger.wb.local
-          - pma.wb.local
-          - eth.wb.local
-          - monitor.wb.local
+          - api.hybridmoney.exchange
+          - auth.hybridmoney.exchange
+          - ws.ranger.hybridmoney.exchange
+          - pma.hybridmoney.exchange
+          - eth.hybridmoney.exchange
+          - monitor.hybridmoney.exchange
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.wb.local'
+      traefik.frontend.rule: 'Host: monitor.hybridmoney.exchange'
       traefik.port: 8080
